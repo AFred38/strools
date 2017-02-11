@@ -6,6 +6,9 @@ Get your token to use with stravalib API.
 
 ###Usage :
 ```python
-import cherrypy, strools
-cherrypy.quickstart(strools.getToken(client_id,secret,scope))
+import strools
+tok = strools.get_token(client_id, secret, scope)
+```
+If `scope` is not given, the default value `view_private` is used.
+
 
